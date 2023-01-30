@@ -1,0 +1,33 @@
+<%- include("partials/header") %> 
+
+<div class="page">
+    <div class="content-area cancel-apt-area">
+        <div class="content">
+            <div class="authentication">
+                <a class="navbar-brand nav-logo cancel-apt-logo" href="/">b<span class="nav-logo-g">g</span></a>
+
+                <h4 class="auth-heading">Sign in</h4>
+
+                <form class="authentication-form" action="/login" method="POST">
+                    <div class="mb-3 email-field">
+                      <input type="email" class="form-control" id="email" placeholder="Email address" name="username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                    </div>
+
+                    <p>Don't have an account? <a href="/register">Register</a></p>
+                        
+                    <button type="submit" class="btn btn-primary fu-btn register-btn-clk">Login</button>
+
+                    <!-- <p class="auth-caution">
+                        <i class="fa-sharp fa-solid fa-circle-info icon"></i> Upon submission, if page reloads, the admin token is invalid
+                    </p> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,1191 @@
+body {
+    background-color: black;
+    color: black;
+    font-family: "Plus Jakarta Sans";
+}
+
+/* multiselectors */
+h1, h2, h4, button:not(.accordion-button), .nav-logo, .nav-txt, .dropdown-item, .link-btn, .contact-us li, .action-btn p {
+    font-family: "Days One" !important; 
+}
+
+.nav-logo-g, .nav-txt:hover, .icon, .dropmenu-icon, .dropmenu-item:hover, .link-btn:hover, 
+.li-icon, .contact-us i, .footer-content .menu a:hover, .in-line-a, .emphasize-txt, .cancel-apt-form a,
+.authentication-form a, .cancel-apt-submitted-a, .accordion-button:not(.collapsed), .schedule-warning, .auth-notif, 
+.current-apt h2, .today_num_apts, .fa-cog, .fa-robot {
+    color: #E62E24;
+}
+
+.nav-logo:hover, .nav-logo, .nav-txt, .top-nav:hover, .dropdown-toggle:focus, .footer-content p, 
+.footer-content .menu a, .action-btn p, .banner h1  {
+    color: white;
+}
+
+h1, h2, h4, .nav-txt, button:not(.accordion-button), .link-btn, .action-btn p, .today_num_apts {
+    text-transform: uppercase;
+}
+
+.dropdown-item, .CTA-btn, .nav-txt  {
+    font-size: 15px;
+}
+
+.fu-content, .workmanship-content {
+    background-color: #D9D9D9;
+}
+
+.fu-content, .workmanship-content, .footer-content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.top-nav, .contact-us li  {
+    color: #A5A3A3;
+}
+
+.CTA-btn, .fu-btn, .action-btn, .fc-toolbar-chunk button, .fc-event  {
+    background-color: #E62E24;
+}
+
+p, .grid-content {
+    margin: 20px 0 35px;
+}
+
+.in-line-a, .link-btn, .cancel-apt-form a, .cancel-apt-submitted-a, .authentication-form a {
+    text-decoration: none;
+}
+
+/* ...content area (wide) */
+#Services .services-area, .content-area, .appointment-nav {
+    margin-right: 160px;
+    margin-left: 160px;
+}
+
+/* Navagation */
+.mobile-nav {
+    display: none;
+}
+
+.navbar {
+    margin: auto 10%;
+}
+
+.nav-logo { 
+    font-size: 80px;
+    margin-top: 116px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-brand:focus {
+    color: white;
+}
+
+.mobile-container {
+    padding: 0 25px;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-short {
+    height: 60px;
+}
+
+.navbar-nav li:not(:last-child)  {
+    margin-right: 20px;
+}
+
+.skinny-fluid {
+    margin: 15px auto 5px;
+}
+
+.dropmenu-icon {
+    vertical-align: top;
+    padding: 4px 0 0 16px;
+}
+
+.dropmenu-item {
+    padding-left: 8px;
+}
+
+.dropmenu-item:hover {
+    background-color: transparent;
+}
+
+/* CTA Section */
+#CTA .gradient-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 45%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/landing-page.png");
+    width: 100%;
+    height: 563px;
+    background-size: cover;
+    color: white;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 143.8%;
+    margin: 0 15%;
+    text-align: center;
+}
+
+.CTA-btn, .fu-btn {
+    border: none;
+    border-radius: 0;
+    height: 56px;
+    margin-top: 20px;
+    width: 260px;
+}
+
+.in-line-a:hover, .cancel-apt-form a:hover , .cancel-apt-submitted-a:hover, .authentication-form a:hover {
+    color:#ca2a22;
+}
+
+.CTA-btn:hover, .fu-btn:hover, .fc-toolbar-chunk button:hover {
+    background-color: #ca2a22;
+}
+
+.CTA-btn:active, .fu-btn:active, .fc-toolbar-chunk button:active {
+    --bs-btn-active-bg: #E62E24;
+}
+
+/* Services Section */
+#Services .services-area, .content-area {
+    background-color: #F3F3F3;
+    height: 420px;
+    margin-top: -80px;
+}
+
+.services-content {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-img {
+    display: block;
+    transform: translateY(-40px);
+    margin: 0 auto;
+    width: 280px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.icon-container{
+    padding-top: 1px;
+}
+
+.li-icon {
+    font-size: 20px;
+}
+
+.grid-list {
+    column-gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    row-gap: 1rem;
+}
+
+.grid-list li {
+    width: 90%;
+    padding-left: 12px;
+}
+
+.link-btn {
+    color: black;
+    font-size: 15px;
+    margin-top: 46px;
+}
+
+/* Find Us Section */
+.fu-content {
+    height: fit-content;
+    padding: 85px 0 90px;
+    justify-content: center;
+}
+
+.txt-col {
+    width: 540px;
+    height: fit-content;
+}
+
+.txt-col h2 {
+    line-height: 158.3%;
+}
+
+p {
+    line-height: 165.5%;
+}
+
+.location-col {
+    height: fit-content;
+}
+
+.location-frame {
+    width: 450px;
+    height: 566.281px;
+}
+
+.btn-container {
+    display: flex;
+    column-gap: 20px;
+}
+
+/* Insurance Section */
+.insurance-content {
+    background-color: #FFFFFF;
+    padding: 40px 0 40px;
+}
+
+.insurance-content p {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px auto 0;
+    width: 60%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+    overflow: hidden;
+}
+
+.slider-item {
+    max-width: 210px;
+}
+
+/* logo carousel */
+.first {
+ -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+     -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+         animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes bannermove {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -1560px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+/* Quality Workmanship Section */
+.workmanship-content {
+    padding: 70px 0 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.QW-img {
+    position: relative;
+}
+
+.QW-img img {
+    height: 550px;
+}
+
+.QW-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #000000 45%, #E62E24 90%);
+    opacity: 50%;
+} 
+
+.workmanship-content p {
+    width: 98%;
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: #000000;
+    height: fit-content;
+}
+
+.footer-content {
+    padding: 70px 160px 90px;
+    width: 100%;
+}
+
+.footer-content > * {
+    height: fit-content;
+}
+
+.footer-content .txt-blob {
+    width: 80%;
+}
+
+.footer-content a {
+    position: relative;
+    margin: 0;
+}
+
+.footer-content img {
+    width: 60%;
+}
+
+.footer-content .menu {
+    width:fit-content;
+}
+
+.footer-content .menu li {
+    white-space: nowrap;
+}
+
+
+.footer-content .menu ul {
+    width: fit-content;
+    list-style-type: none;  
+    padding: 0;
+}
+
+.footer-content .menu ul > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.menu .menu-container {
+    padding: 0;
+}
+
+.menu .navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us .grid-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-us .grid-list li {
+    width: 100%;
+}
+
+.footer-content .contact-us,  .footer-content .menu{
+    margin-top: 70px;
+}
+
+.copyright {
+    color: #757474;
+    text-align: right;
+    margin: 0 160px;
+    transform: translateY(-50px);
+}
+
+/* Floating action button */
+.action-btn {
+    align-items: center;
+    border-radius: 50px;
+    height: 60px;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    position: absolute;
+    position: fixed;
+    width: 60px;
+    transition: width 1s;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.btn-hovered {
+    width: 260px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn:active {
+    background-color: #ca2a22;
+}
+
+.calender-icon {
+    color: white;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-content {
+    display: flex;
+}
+
+.action-btn p {
+    margin: 0;
+    pointer-events: none;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* Services Page */
+.services-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/fixing-engine.png");   
+}
+
+/* Tour & Equipment Page */
+.tour-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/tour-equipment.png");   
+}
+
+.tour-pic {
+    width: 400px;
+}
+
+.img-caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.fac-tour-heading {
+    text-align: center;
+    margin: 70px 0 36px;
+}
+
+.important-txt {
+    text-align: center;
+}
+
+/* Our Process Page */
+.process-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/process.png");   
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* About Us Page */
+.about-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/about-us.jpg");   
+}
+
+.green-txt {
+    color: #79a02c;
+}
+
+/* Contact Us Page */
+.contact-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/contact.jpeg");   
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.content .location-frame {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Gallary Page */
+.gallary-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/gallary.jpeg");   
+}
+
+.gal-overlay {
+    position: relative;
+}
+
+.gal-pic {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gal-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.gal-overlay:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 50%;
+}
+
+.gallery div {
+    padding: 0;
+}
+
+.img-holder:hover {
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+/* lightbox */
+.modal-content {
+    background-color: unset;
+}
+
+#LightboxCanvas{
+    max-width:100%; max-height:100%;
+}
+
+/* FAQ Page */
+.faq-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/faq.jpeg");   
+}
+
+.accordion {
+    margin-top: 40px;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem transparent;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E62E24'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.accordion p {
+    margin: 0;
+}
+
+.accordion button {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
+/* Schedule Service */
+.schedule-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .69) 50%, rgba(230, 46, 36, .69) 90%), url("images/page-banners/schedule-service.jpeg");   
+    background-position: bottom !important;
+}
+
+#calendar {
+    margin-top: 40px;
+}
+
+.fc-toolbar-title, .current-apt h2, .today_num_apts, .apts-list h2 {
+    font-family: "Plus Jakarta Sans" !important;
+    font-weight: bold;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 20px;
+}
+
+.fc-toolbar-chunk button {
+    border: 0;
+    border-radius: 50px;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.fc-toolbar-chunk span {
+    display: flex;
+    justify-content: center;
+}
+
+.btn .bi {
+    font-size: 26px;
+}
+
+.fc-daygrid-day-top a, .fc-scrollgrid-sync-inner a {
+    font-size: 13px;
+}
+
+.schedule-modal {
+    background-color: white;
+}
+
+.modal-form-title {
+    margin: 0;
+}
+
+.hide-content {
+    display: none;
+}
+
+colgroup {
+    background-color: #00000010;
+}
+
+.fc-col-header  {
+    background-color: transparent;
+}
+
+#schedule-form button {
+    margin: 6px 0 18px;
+}
+
+.events {
+    display: none;
+}
+
+.fc-event {
+    border-radius: 50px;
+    border: none;
+}
+
+.fc-event-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-warning {
+    margin: 4px 0 0;
+    font-size: 12px;
+}
+
+#schedule-form .btn:focus-visible {
+    background-color: #ca2a22;
+}
+
+/* Cancel appointment page */
+.cancel-apt-area {
+    background-color: black;
+    margin: 0px;
+    height: 100vh !important;
+}
+
+.cancel-appointment .nav-logo, .authentication .nav-logo {
+    position: relative;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.cancel-appointment, .authentication {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cancel-appointment > *{
+    width: 40%;
+}
+
+.cancel-apt-form, .authentication-form {
+    margin-top: 10px;
+}
+
+.cancel-apt-form input, .cancel-apt-form input:focus, 
+.authentication-form input, .authentication-form input:focus {
+    background-color: black;
+    color: white;
+}
+
+.cancel-apt-form button, .authentication-form button {
+    margin-top: 0;
+}
+
+.cancel-apt-submitted-p {
+    margin-top: 26px;
+}
+
+.cancel-apt-submitted-logo {
+    margin-bottom: 0 !important;
+}
+
+/* Register page */
+.authentication-form .form-control:focus, .cancel-appointment .form-control:focus {
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.auth-notif {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Appointments page */
+.appointment-nav {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appointment-nav .nav-txt {
+    margin-top: 27px;
+}
+
+.appointments-area {
+    margin-top: 50px;
+}
+
+.apt-page .nav-logo {
+    position: relative;
+    margin-top: 0;
+}
+
+.robot-load {
+    margin-bottom: 0;
+}
+
+.apts-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+}
+
+.apts-row > * {
+    margin-top: 40px;
+    height: fit-content;
+    padding: 10px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.current-apt h2, .today_num_apts {
+    font-size: 20px;
+}
+
+.current-apt h2 {
+    margin-bottom: 18px;
+}
+
+.current-apt span {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: normal;
+    color: #000000;
+}
+
+.space-span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+hr {
+    opacity: 0;
+    margin: 2px 0;
+}
+
+.today_num_apts {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.apt-notif {
+    margin: 4.5px 0 0;
+}
+
+/* Authentication config */
+input[name="username"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[name="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.email-field {
+    margin-bottom: 0 !important;
+}
+
+.authentication-form {
+    max-width: 260px;
+}
+
+.auth-caution {
+    font-size: 12px;
+}
+
+/* Page config */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-area {
+    height: fit-content;
+    padding: 20px 70px 60px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 .25rem rgba(230, 46, 36, .25);
+}
+
+/* Email confirmation */
+.email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-content {
+    background-color: black;
+    height: 300px;
+    width: 50%;
+}
+
+/* Mobile Responsive Configurations */
+@media only screen and (max-width: 991px) {
+
+    #CTA .gradient-overlay {
+        height: fit-content;
+        padding: 80px 0 80px;
+    }
+
+    .banner-content {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* content margin */
+    h1, .services-content, .grid-list, .txt-col, .location-col, .btn-div, .slider, 
+    .QW-img, .footer-content, .copyright, .action-btn, .content-area > * {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .services-content, .fu-content, .insurance-content, .workmanship-content, .footer-content, .content-area {
+        padding: 40px 0 60px;
+    }
+
+    h1, h2 {
+        font-size: 23px;
+    }
+
+    .btn-div {
+        display: block;
+        width: auto;
+    }
+
+    .CTA-btn {
+        width: 100%;
+    }
+
+    .nav-logo {
+        font-size: 30px;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .mobile-nav {
+        display: inline;
+    }
+
+    .mobile-signin {
+        display: none;
+    }
+
+    .computer-site {
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+        line-height: 143.8%; 
+    }
+
+    .car-img {
+        display: none;
+    }
+
+    #Services .services-area{
+        background-color: #F3F3F3;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .services-content {
+        margin-top: 0;
+    }
+
+    .grid-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15px;
+        row-gap: 1rem;
+    }
+
+    .grid-list li {
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    .link-btn {
+        margin-top: 25px;
+    }
+
+    .fu-content {
+        height:fit-content;
+        display: inline-block;
+        width: 100%;
+    }  
+
+    .txt-col {
+        width: auto;
+        height: fit-content;
+    }
+
+    .location-frame {
+        width: 100%;
+        height: 566.281px;
+    }
+
+    .btn-container {
+        display: block;
+    }
+
+    .fu-btn {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .fu-btn:not(:first-of-type) {
+        margin-top: 20px;
+    }
+
+    .location-col {
+        margin-top: 40px;
+    }
+
+    .insurance-content {
+        background-color: #FFFFFF;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+        overflow: hidden;
+    }
+
+    .workmanship-content {
+        display: inline-block;
+    }
+
+    .QW-img {
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .QW-img img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        object-position: left;
+    }
+    
+    .QW-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #000000 45%, #E62E24 90%);
+        opacity: 50%;
+    } 
+    
+    .workmanship-content .txt-col {
+        margin-top: 20px;
+    }
+
+    .workmanship-content p {
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 24px;
+    } 
+    
+    .footer-content .txt-blob {
+        width: 100%;
+    }
+
+    .footer-content .nav-logo {
+        font-size: 60px;
+    }
+    
+    .footer-content img {
+        width: 100%;
+    }
+
+    .footer-content .menu ul {
+        margin: 0;
+    }
+
+    .contact-us span {
+        display: none;
+    }
+
+    .contact-us ul {
+        margin: 0;
+    }
+
+    .contact-us li {
+        padding: 0;
+    }
+
+    .copyright {
+        color: #757474;
+        text-align: left;
+        transform: translateY(-25px);
+    }
+
+    .action-btn {
+        margin-bottom: 25px;
+    }
+
+    /* page configurations */
+    .banner {
+        padding-top: 100px;
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .content-area {
+        height: fit-content;
+        margin: 0;
+    }
+    /* end of page configurations */
+    
+    .tour-pic {
+        width: 100%;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        row-gap: 24px;
+    }
+
+    .gal-overlay::after {
+        background-color: black;
+        opacity: 30%;
+    }
+
+    .img-holder:hover {
+        transform: scale(1);
+    }
+
+    .accordion {
+        margin-top: 20px;
+    }
+
+    .fc-daygrid-event-harness {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fc-event {
+        border-radius: 50px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .fc-event-title {
+        display: none !important;
+    }
+
+    .cancel-appointment, .authentication {
+        padding-top: 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .cancel-appointment > *{
+        width: auto;
+    }
+    
+}

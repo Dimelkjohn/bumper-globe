@@ -1,0 +1,97 @@
+<%- include("partials/header") %> 
+<%- include("partials/navbar"); %>
+<%- include("partials/floating-btn") %> 
+
+<div class="page">
+    <div class="banner contact-banner">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="content-area">
+        <div class="content">
+            <div class="grid-content">
+                <div class="about-col">
+                    <!-- <h2>We are the Bumper Globe!</h2> -->
+                    <h2>Contact the <br>Bumper Globe Team!</h2>
+
+                    <p>
+                        <strong>Business hours:</strong> 
+                        <br>
+                        Monday - Friday 8am to 5pm
+                        <br>
+                        Saturday 9am to 12pm 
+                        <br>
+                        for Estimate or by appointment
+        
+                        <br><br>
+                        <strong>Call us at:</strong>
+                        <br>
+                        443-708-8352 | 443-759-5138 
+        
+                        <br><br>
+                        <strong>Fax:</strong>
+                        <br>
+                        443-708-8354
+        
+                        <br><br>
+                        <strong>Send us an email at:</strong> 
+                        <br>
+                        info@bumperglobe.com.
+        
+                        <br><br>
+                        All inquiries will be answered via email.  We appreciate your interest in Bumper Globe!
+                    </p>
+                </div>
+
+                <div class="form-col">
+                    <!-- <h2 class="contact-form">Drop us a Message!</h2> -->
+                    <form action="/contact-us" method="POST">
+                        <div class="mb-3">
+                          <label for="fName" class="form-label">First Name*</label>
+                          <input type="text" class="form-control" id="fName" placeholder="John" name="fName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lName" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="lName" placeholder="Dimelu" name="lName" required>
+                        </div>
+    
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email*</label>
+                          <input type="email" class="form-control" id="email" placeholder="john@dimelu.com" name="email" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number*</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="(###)-###-####" name="phone" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message*</label>
+                            <textarea class="form-control" id="message" name="message" rows="8" placeholder="What would you like to inquire about?" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-primary fu-btn">Submit</button>
+                    </form>
+                </div>   
+            </div>
+
+            <iframe 
+                class="location-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.869988090138!2d-76.6145097!3d39.268516399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8036b3c8ec58b%3A0xf0eaa6dd353bad69!2s1845%20S%20Hanover%20St%2C%20Baltimore%2C%20MD%2021230!5e0!3m2!1sen!2sus!4v1672178494125!5m2!1sen!2sus" 
+                allow="fullscreen"
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <p>
+                *1845 S. Hanover Street Baltimore, MD  21230 is on the corner of S. Hanover  and W. Well streets. 
+                We are a few blocks away from Cross Street Market in the heart of Federal Hill. Just 1/2 mile to M & T Stadium, 
+                Camden Yard, Inner Harbor, Under Armour headquarter, downtown, and all the attractions!  
+            </p>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer-content") %> 
+<%- include("partials/footer") %> 

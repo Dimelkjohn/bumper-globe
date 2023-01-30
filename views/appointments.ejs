@@ -1,0 +1,36 @@
+<%- include("partials/header") %> 
+
+<div class="page apt-page">
+    <div class="appointment-nav">
+        <a class="navbar-brand nav-logo" href="/">b<span class="nav-logo-g">g</span></a>
+        <a class="nav-link nav-txt" href="/logout"><p><i class="fa-solid fa-power-off"></i> Log out</a>
+    </div>
+
+    <div class="content-area appointments-area">
+        <div class="content">
+            <p class="robot-load"><i class="fa-solid fa-cog fa-spin"></i> <i class="fa-solid fa-robot"></i> Beep boop, please give me a minute to retreive your data...</p>
+            <div class="apts-row">
+                <div class="current-apt">
+                    <h2>Current Appointment: <br><hr></h2>
+                </div>
+
+                <div class="upcoming-apts">
+                    <p class="today_num_apts"></p>
+                    <div class="accordion accordion-flush apts-list" id="accordionFlushExample"></div>
+                </div>
+            </div>
+            <!-- <p>
+                <i class="fa-sharp fa-solid fa-circle-info icon"></i> Please select a date to begin your scheduling process
+                <br>
+                <i class="fa-sharp fa-solid fa-circle-info icon"></i> Dates containing texts in the color <i class="fa-solid fa-circle icon"></i> signify active appointments 
+                on that day, yours will appear like so too!
+            </p> -->
+
+            <div id="calendar"></div>
+
+            <button class="events" value="<%= JSON.stringify(db_events) %>"></button>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %> 
