@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
                     console.log(check, today);
 
-                    if((day !== "Sun") && (check >= today))
+                    if((day !== "Sun") && (check > today))
                     {
                         $("#scheduling-modal").modal("toggle");
                     }
