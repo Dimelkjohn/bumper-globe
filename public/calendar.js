@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", () =>
                     var check = info.dateStr.slice(0, 10);
                     var today = new Date().toISOString().split('T')[0];
 
-                    if((day !== "Sun") && (check > today))
+                    console.log(check, today);
+
+                    if((day !== "Sun") && (check >= today))
                     {
                         $("#scheduling-modal").modal("toggle");
                     }
