@@ -25,6 +25,71 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Home Page
+app.get("/", (req, res) =>
+{
+    res.render("home");
+});
+
+// Services page
+app.get("/services", (req, res) =>
+{
+    res.render("services");
+});
+
+// Tour & Equipment Page
+app.get("/tour-&-equipment", (req, res) =>
+{
+    res.render("tour&equipment");
+});
+
+// Our process Page
+app.get("/our-process", (req, res) =>
+{
+    res.render("our-process");
+});
+
+// About Us Page
+app.get("/about-us", (req, res) =>
+{
+    res.render("about-us");
+});
+
+// Contact Us Page
+app.get("/contact-us", (req, res) =>
+{
+    res.render("contact-us");
+});
+
+app.post("/contact-us", (req, res) =>
+{
+    const {fName, lName, email, phone, message} = req.body;
+
+    const info = transporter.sendMail({
+        from: "bumperglobeclients@gmail.com",
+        to: "bumperglobeclients@gmail.com", //Change to info@bumperglobe.com
+        subject: "New Client Inquiry",
+        html: `<p><strong>Name:</strong> ${fName} ${lName} <br> 
+                <strong>Email:</strong> ${email} <br>
+                <strong>Phone:</strong> ${phone} <br>
+                <strong>Message:</strong> ${message}</p>`
+    }); 
+
+    res.redirect("/contact-us");
+});
+
+// Gallary Page
+app.get("/gallery", (req, res) =>
+{
+    res.render("gallery");
+});
+
+// FAQ
+app.get("/faq", (req, res) =>
+{
+    res.render("faq");
+});
+
 main().catch((err) => console.log(err));
 async function main()
 {
@@ -75,71 +140,6 @@ async function main()
             pass: process.env.GOOGLE_APP_PWD,
         }
         });
-
-    // Home Page
-    app.get("/", (req, res) =>
-    {
-        res.render("home");
-    });
-
-    // Services page
-    app.get("/services", (req, res) =>
-    {
-        res.render("services");
-    });
-
-    // Tour & Equipment Page
-    app.get("/tour-&-equipment", (req, res) =>
-    {
-        res.render("tour&equipment");
-    });
-
-    // Our process Page
-    app.get("/our-process", (req, res) =>
-    {
-        res.render("our-process");
-    });
-
-    // About Us Page
-    app.get("/about-us", (req, res) =>
-    {
-        res.render("about-us");
-    });
-
-    // Contact Us Page
-    app.get("/contact-us", (req, res) =>
-    {
-        res.render("contact-us");
-    });
-
-    app.post("/contact-us", (req, res) =>
-    {
-        const {fName, lName, email, phone, message} = req.body;
-
-        const info = transporter.sendMail({
-            from: "bumperglobeclients@gmail.com",
-            to: "bumperglobeclients@gmail.com", //Change to info@bumperglobe.com
-            subject: "New Client Inquiry",
-            html: `<p><strong>Name:</strong> ${fName} ${lName} <br> 
-                    <strong>Email:</strong> ${email} <br>
-                    <strong>Phone:</strong> ${phone} <br>
-                    <strong>Message:</strong> ${message}</p>`
-        }); 
-
-        res.redirect("/contact-us");
-    });
-
-    // Gallary Page
-    app.get("/gallery", (req, res) =>
-    {
-        res.render("gallery");
-    });
-
-    // FAQ
-    app.get("/faq", (req, res) =>
-    {
-        res.render("faq");
-    });
 
     // Schedule Service (client-end)
     app.get("/schedule-service", (req, res) =>
